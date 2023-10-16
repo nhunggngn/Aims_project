@@ -13,7 +13,6 @@ public class EquationSolver {
                 "Nguyen Thi Nhung 20215109 - Select the type of equation ",
                 JOptionPane.INFORMATION_MESSAGE);
 
-
         switch (choice) {
             case "1":
                 solveLinearEquation(scanner);
