@@ -6,28 +6,26 @@ public class ArraySorting {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("PLease enter the numbers of element:");
-        int n = keyboard.nextInt();
-        int iSum = 0;
-        int[] array = new int[n];
+        int n = keyboard.nextInt(); //Nhập số phần tử của mảng
+        int[] array = new int[n]; //khai báo mảng số nguyên với số phần tử do người dùng nhập
         for (int i = 0; i < n; i++) {
             int b = i + 1;
             System.out.println("PLease enter the number " + b + ": ");
-            array[i] = keyboard.nextInt();
+            array[i] = keyboard.nextInt(); // nhập các phần tử của mảng
         }
-        // Sort the array in ascending order
+        // sắp xếp mảng theo thứ tự tăng dần
         Arrays.sort(array);
-
-        // Print the sorted array
+        // In mảng đã sắp xếp
         System.out.println("Sorted array: " + Arrays.toString(array));
 
-        // Calculate the sum of array elements
+        // tính tổng các phần tử
         int sum = 0;
         for (int num : array) {
                 sum += num;
             }
         System.out.println("Sum: " + sum);
 
-        // Calculate the average value of array elements
+        // tính trung bình giá trị các phần tử
         double average = (double) sum / array.length;
         System.out.println("Average: " + average);
         }
