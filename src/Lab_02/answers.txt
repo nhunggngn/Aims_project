@@ -1,0 +1,23 @@
+			BÁO CÁO THỰC HÀNH LAP 2
+		       LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG
+			
+			Trả lời câu hỏi:
+
+Question:
+- If you create a constructor method to build a DVD by title 
+then create a constructor method to build a DVD by category. 
+Does JAVA allow you to do this?
+
+Trả lời:
+	Giống như phương thức trong Java, Java cho phép tạo ra nhiều 
+phương thức khởi tạo (constructor) với các danh sách tham số khác nhau.
+Mỗi phương thức khởi tạo có thể có một tập hợp tham số khác nhau, cho phép 
+cung cấp các cách khác nhau để xây dựng các đối tượng dựa trên các tiêu chí khác nhau.
+	Java phân biệt các constructor bởi tổng tham số truyền và kiểu của 
+chúng và khi người lập trình không tạo constructor thì java sẽ tạo ra constructor mặc định không có tham số
+Lưu ý rằng các phương thức khởi tạo phải có các danh sách tham số khác nhau hoặc có các 
+kiểu/ thứ tự tham số khác nhau để tránh sự mơ hồ và cho phép trình biên dịch phân biệt chúng một cách chính xác.
+ 
+
+
+//Nguyen Thi Nhung 20215109
