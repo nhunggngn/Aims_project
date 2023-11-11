@@ -17,6 +17,20 @@ public class Cart {
             System.out.println("Giỏ hàng đã hết chỗ!");
         }
     }
+
+    //Phương thức thêm 1 list DVD vào giỏ hàng
+    public  void addDigitalVideoDisc(DigitalVideoDisc [] dvdlist){
+        for(DigitalVideoDisc disc: dvdlist){
+            addDigitalVideoDisc(disc);
+        }
+    }
+
+    //Phương thức thêm DVD vào giỏ hàng với nhiều tham số
+    public  void addDigitalVideoDisc(DigitalVideoDisc disc1,DigitalVideoDisc disc2){
+        addDigitalVideoDisc(disc1);
+        addDigitalVideoDisc(disc2);
+    }
+
 //Phương thức xóa DVD khỏi giỏ hàng
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         boolean found = false; // tạo biến để kiểm tra có tìm thấy DVD cần xóa không
