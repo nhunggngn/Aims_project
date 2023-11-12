@@ -56,7 +56,7 @@ public class Cart {
         return total; // trả về tổng giá DVD trong giỏ
     }
 
-    // Phương thức in ra thông tin của các DVD trong giỏ và tổng giá
+// Phương thức in ra thông tin của các DVD trong giỏ và tổng giá
     public void print(){
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items: ");
@@ -64,7 +64,7 @@ public class Cart {
             System.out.println((i+1) + ". DVD - " + itemOrder[i].getTitle() + " - " +
                     itemOrder[i].getCategory() + " - " + itemOrder[i].getDirector() + " - " +
                     itemOrder[i].getLength() + ": " + itemOrder[i].getCost() + "$");
-        }
+            }
         System.out.println("Total cost: " + totalCost());
         System.out.println("***************************************************");
     }
