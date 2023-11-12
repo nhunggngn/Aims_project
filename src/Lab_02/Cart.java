@@ -55,4 +55,45 @@ public class Cart {
         for(int i=0; i<qtyOrdered; i++) total += itemOrder[i].getCost();
         return total; // trả về tổng giá DVD trong giỏ
     }
+    // Phương thức in ra thông tin của các DVD trong giỏ và tổng giá
+    public void print(){
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items: ");
+        for(int i = 0; i < qtyOrdered; i++){
+            System.out.println((i+1) + ". DVD - " + itemOrder[i].getTitle() + " - " +
+                    itemOrder[i].getCategory() + " - " + itemOrder[i].getDirector() + " - " +
+                    itemOrder[i].getLength() + ": " + itemOrder[i].getCost() + "$");
+        }
+        System.out.println("Total cost: " + totalCost());
+        System.out.println("***************************************************");
+    }
+    //Phương thức tìm dvd theo ID
+    public void search(int id){
+        boolean found = false;
+        for(int i = 0; i < qtyOrdered; i++){
+            if(itemOrder[i].getId() == id){
+                System.out.println(itemOrder[i].toString());
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Không tìm thấy DVD có ID: " + id);
+        }
+
+    }
+
+    //Phương thức tìm dvd theo title
+    public void search(String title){
+        boolean found = false;
+        for(int i = 0; i < qtyOrdered; i++){
+            if (itemOrder[i].isMatch(title)){
+                System.out.println(itemOrder[i].toString());
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Không tìm thấy DVD có title: " + title);
+        }
+    }
+
 }
