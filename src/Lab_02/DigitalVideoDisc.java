@@ -6,6 +6,10 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
     private String director;
     private int length;
     private float cost;
+    //Create class attribute:
+    private static int nbDigitalVideoDiscs = 0;
+    //Create instance attribute:
+    private int id;
 
 //Create accessors
     public String getTitle() {
@@ -46,18 +50,24 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
 
     public DigitalVideoDisc(String title) {
         this.title = title;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 //Create Constructor
     public DigitalVideoDisc(String title, String category, float cost) {
         this.title = title;
         this.category = category;
         this.cost = cost;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
     public DigitalVideoDisc(String title, String category, String director, float cost) {
         this.title = title;
         this.category = category;
         this.director = director;
         this.cost = cost;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
         this.title = title;
@@ -65,6 +75,8 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
         this.director = director;
         this.length = length;
         this.cost = cost;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 }
 
