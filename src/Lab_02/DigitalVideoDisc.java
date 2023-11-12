@@ -10,10 +10,6 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
     private static int nbDigitalVideoDiscs = 0;
     //Create instance attribute:
     private int id;
-    public DigitalVideoDisc(){
-        nbDigitalVideoDiscs++; //cập nhật nbDigitalVideoDiscs
-        this.id = nbDigitalVideoDiscs; // gán id của đối tượng mới bằng nbDigitalVideoDiscs đã cập nhật
-    }
 
 //Create accessors
     public String getTitle() {
