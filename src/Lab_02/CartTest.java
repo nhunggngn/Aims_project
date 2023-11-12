@@ -13,5 +13,10 @@ public class CartTest {
                 "Animation", 18.99f);
         cart.addDigitalVideoDisc(dvd3);
         cart.print();
+        cart.search(1);
+        cart.search(4);
+        cart.search("Aladin");
+        cart.search("Nhungngn");
+
     }
 }

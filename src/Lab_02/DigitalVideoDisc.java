@@ -28,6 +28,10 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
         return cost;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -77,6 +81,21 @@ public class DigitalVideoDisc { //khai báo các thuộc tính
         this.cost = cost;
         nbDigitalVideoDiscs++;
         this.id = nbDigitalVideoDiscs;
+    }
+
+    public String toString(){
+        return "DVD - " + title + " - " +
+                category + " - " + director + " - " +
+                length + ": " + cost + "$";
+    }
+
+    public boolean isMatch(String title){
+        if (title.equals(this.title)){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
 
