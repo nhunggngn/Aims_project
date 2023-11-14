@@ -1,5 +1,7 @@
-package Lab_02;
-import java.sql.SQLOutput;
+package Lab_02.src.hust.soict.aims;
+import Lab_02.src.hust.soict.aims.cart.Cart;
+import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
+
 public class Aims {
     public static void main(String[] args) {
         // Tạo giỏ hàng

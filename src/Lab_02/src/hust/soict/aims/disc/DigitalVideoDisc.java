@@ -1,4 +1,4 @@
-package Lab_02;
+package Lab_02.src.hust.soict.aims.disc;
 
 public class DigitalVideoDisc { //khai báo các thuộc tính
     private String title;
