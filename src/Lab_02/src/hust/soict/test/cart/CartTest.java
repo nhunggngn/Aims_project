@@ -10,6 +10,7 @@ public class CartTest {
                 "Animation", "Roger Allers", 87, 19.95f);
         cart.addDigitalVideoDisc(dvd1);
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star wars",
+
                 "Science Fiction", "George Lucas", 87, 24.95f);
         cart.addDigitalVideoDisc(dvd2);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
