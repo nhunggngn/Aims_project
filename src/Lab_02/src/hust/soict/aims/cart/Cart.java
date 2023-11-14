@@ -1,4 +1,6 @@
-package Lab_02;
+package Lab_02.src.hust.soict.aims.cart;
+
+import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20; //khai bao hằng cho số lượng tối đa của giỏ hàng
