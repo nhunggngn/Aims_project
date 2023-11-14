@@ -19,7 +19,7 @@ public class Store {
     }
 
     //Phương thức xóa DVD trong cửa hàng
-    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
+    public void removeDVD(DigitalVideoDisc disc) {
         boolean found = false; // tạo biến để kiểm tra có tìm thấy DVD cần xóa không
         for (int i = 0; i < qtyInStore; i++){
             if(itemInStore[i] == disc){ // nếu tìm thấy DVD cần xóa

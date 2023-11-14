@@ -9,5 +9,6 @@ public class StoreTest {
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star wars",
                 "Science Fiction", "George Lucas", 87, 24.95f);
         store.addDVD(dvd2);
+        store.removeDVD(dvd1);
     }
 }
