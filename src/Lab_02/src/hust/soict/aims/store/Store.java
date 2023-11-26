@@ -1,6 +1,6 @@
 package Lab_02.src.hust.soict.aims.store;
 
-import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 
 public class Store {
     public static final int MAX_NUMBERS = 1000; //khai bao hằng cho số lượng DVD tối đa cửa hàng lưu trữ đc

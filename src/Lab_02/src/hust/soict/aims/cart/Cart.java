@@ -1,6 +1,6 @@
 package Lab_02.src.hust.soict.aims.cart;
 
-import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20; //khai bao hằng cho số lượng tối đa của giỏ hàng
@@ -100,7 +100,5 @@ public class Cart {
             System.out.println("Không tìm thấy DVD có title: " + title);
         }
     }
-
-=======
 
 }
