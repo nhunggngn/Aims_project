@@ -1,6 +1,6 @@
 package Lab_02.src.hust.soict.test.cart;
 
-import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 import Lab_02.src.hust.soict.aims.cart.Cart;
 
 public class CartTest {

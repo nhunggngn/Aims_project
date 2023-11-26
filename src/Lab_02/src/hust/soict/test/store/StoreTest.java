@@ -1,6 +1,6 @@
 package Lab_02.src.hust.soict.test.store;
 
-import Lab_02.src.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 import Lab_02.src.hust.soict.aims.store.Store;
 
 public class StoreTest {
