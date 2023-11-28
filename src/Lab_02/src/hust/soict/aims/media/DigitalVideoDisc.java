@@ -2,63 +2,27 @@ package Lab_02.src.hust.soict.aims.media;
 
 import Lab_02.src.hust.soict.aims.media.Media;
 
-public class DigitalVideoDisc extends Media { //khai báo các thuộc tính
-    private String director;
-    private int length;
-    private static int nbDigitalVideoDiscs = 0;
+public class DigitalVideoDisc extends Dics implements IPlayable{
+    private static int nbDigitalVideoDisc = 0;
 
-//Create accessors
-    public String getDirector() {
-        return director;
-    }
-    public int getLength() {
-        return length;
+    public void play() {
+
+        System.out.println("Playing DVD: " + this.getTitle());
+
+        System.out.println("DVD length: " + this.getLength());
+
     }
 
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public DigitalVideoDisc(String title) {
-        super();
-        this.setTitle(title);
-        nbDigitalVideoDiscs++;
-        this.setId(nbDigitalVideoDiscs);
-    }
-//Create Constructor
-    public DigitalVideoDisc(String title, String category, float cost) {
-        this.setTitle(title);
-        this.setCategory(category);
-        this.setCost(cost);
-        nbDigitalVideoDiscs++;
-        this.setId(nbDigitalVideoDiscs);
-    }
-    public DigitalVideoDisc(String title, String category, String director, float cost) {
-        this.setTitle(title);
-        this.setCategory(category);
-        this.director = director;
-        this.setCost(cost);
-        nbDigitalVideoDiscs++;
-        this.setId(nbDigitalVideoDiscs);
-    }
-    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-        this.setTitle(title);
-        this.setCategory(category);
-        this.director = director;
-        this.length = length;
-        this.setCost(cost);
-        nbDigitalVideoDiscs++;
-        this.setId(nbDigitalVideoDiscs);
+    public DigitalVideoDisc(String title, String category, float cost, int length, String director) {
+        super(title, category, cost, length, director);
+        nbDigitalVideoDisc++;
+        this.setId(nbDigitalVideoDisc);
     }
 
     public String toString(){
         return "DVD - " + getTitle() + " - " +
-                getCategory() + " - " + director + " - " +
-                length + ": " + getCost() + "$";
+                getCategory() + " - " + getDirector() + " - " +
+                getLength() + ": " + getCost() + "$";
     }
 
     public boolean isMatch(String title){
