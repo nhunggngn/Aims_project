@@ -3,7 +3,7 @@ package Lab_02.src.hust.soict.test.disc;
 import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 
 public class TestPassingParameter {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
         DigitalVideoDisc cinderellaDVD = new DigitalVideoDisc("Cinderella");
         swap(jungleDVD,cinderellaDVD);
@@ -28,6 +28,6 @@ public class TestPassingParameter {
         String oldTitle = dvd.getTitle();
         dvd.setTitle(title);
         dvd = new DigitalVideoDisc(oldTitle);
-    }
+    }*/
 }
 

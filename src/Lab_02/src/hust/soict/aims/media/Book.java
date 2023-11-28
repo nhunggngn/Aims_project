@@ -5,7 +5,11 @@ import java.util.List;
 
 public class Book extends Media{
     private List<String> authors = new ArrayList<String>();
-    public Book(){};
+
+    public Book(String title, String category, float cost, List<String> authors){
+        super(title, category, cost);
+        this.authors = authors;
+    };
 
     public List<String> getAuthors() {
         return authors;

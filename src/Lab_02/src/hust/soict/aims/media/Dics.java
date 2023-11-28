@@ -11,4 +11,9 @@ public class Dics extends Media{
     public String getDirector() {
         return director;
     }
+    public Dics(String title, String category, float cost, int length, String director){
+        super(title, category, cost);
+        this.length = length;
+        this.director = director;
+    }
 }
