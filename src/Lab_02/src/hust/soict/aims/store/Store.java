@@ -1,6 +1,5 @@
 package Lab_02.src.hust.soict.aims.store;
 
-import Lab_02.src.hust.soict.aims.media.DigitalVideoDisc;
 import Lab_02.src.hust.soict.aims.media.Media;
 
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ public class Store {
     private ArrayList<Media> itemInStore =
             new ArrayList<Media>(); //tạo danh sách các mặt hàng được thêm vào cửa hàng
 
-//Phương thức thêm 1 mặt hàng vào cửa hàng
+    //Phương thức thêm 1 mặt hàng vào cửa hàng
     public void addMedia(Media media){
         if(itemInStore.size() < MAX_NUMBERS){ //nếu số mặt hàng trong cửa hàng chưa vượt quá mức tối đa
             itemInStore.add(media); //thêm mặt hàng mới vào
@@ -35,4 +34,15 @@ public class Store {
             System.out.println("Không tìm thấy mặt hàng này trong cửa hàng!");
         }
     }
+
+    //Phương thức tìm media theo title
+    public Media searchMedia(String title){
+        for(Media media1 : itemInStore) {
+            if (media1.isMatch(title)) {
+                return media1;
+            }
+        }
+        return null;
+    }
+
 }

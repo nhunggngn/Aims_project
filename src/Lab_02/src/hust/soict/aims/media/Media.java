@@ -1,47 +1,33 @@
 package Lab_02.src.hust.soict.aims.media;
-
-public abstract class Media {
-    private int id;
+import java.util.Objects;
+public class Track implements IPlayable{
     private String title;
-    private String category;
-    private float cost;
+    private int length;
 
-    public int getId() {
-        return id;
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
     }
-
     public String getTitle() {
         return title;
     }
 
-    public String getCategory() {
-        return category;
+    public int getLength() {
+        return length;
     }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setTitle(String title) {
+    public Track(){};
+    public Track(String title){
         this.title = title;
     }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
-
-    public Media(){};
-    public Media(String title, String category, float cost){
+    public Track(String title, int length){
         this.title = title;
-        this.category = category;
-        this.cost = cost;
+        this.length = length;
+    }
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Track track = (Track) obj;
+        return Objects.equals(title, track.title) && length == track.length;
     }
 }

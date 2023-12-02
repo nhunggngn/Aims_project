@@ -34,4 +34,8 @@ public class Book extends Media{
             System.out.println("Không tìm thấy tác giả này trong danh sách.");
         }
     }
+    public String toString(){
+        return "Book - " + this.getTitle() + " - " +
+                this.getCategory() + " - " + this.getAuthors() + ": " + this.getCost() + "$";
+    }
 }

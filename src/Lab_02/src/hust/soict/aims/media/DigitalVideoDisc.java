@@ -1,7 +1,5 @@
 package Lab_02.src.hust.soict.aims.media;
 
-import Lab_02.src.hust.soict.aims.media.Media;
-
 public class DigitalVideoDisc extends Dics implements IPlayable{
     private static int nbDigitalVideoDisc = 0;
 
@@ -20,9 +18,9 @@ public class DigitalVideoDisc extends Dics implements IPlayable{
     }
 
     public String toString(){
-        return "DVD - " + getTitle() + " - " +
-                getCategory() + " - " + getDirector() + " - " +
-                getLength() + ": " + getCost() + "$";
+        return "DVD - " + this.getTitle() + " - " +
+                this.getCategory() + " - " + this.getDirector() + " - " +
+                this.getLength() + ": " + this.getCost() + "$";
     }
 
     public boolean isMatch(String title){
