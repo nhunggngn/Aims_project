@@ -1,33 +1,64 @@
 package Lab_02.src.hust.soict.aims.media;
 import java.util.Objects;
-public class Track implements IPlayable{
+import java.util.Comparator;
+public abstract class Media {
+    private int id;
     private String title;
-    private int length;
+    private String category;
+    private float cost;
 
-    public void play() {
-        System.out.println("Playing DVD: " + this.getTitle());
-        System.out.println("DVD length: " + this.getLength());
+    public int getId() {
+        return id;
     }
+
     public String getTitle() {
         return title;
     }
 
-    public int getLength() {
-        return length;
+    public String getCategory() {
+        return category;
     }
-    public Track(){};
-    public Track(String title){
+
+    public float getCost() {
+        return cost;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public Track(String title, int length){
-        this.title = title;
-        this.length = length;
+
+    public void setCategory(String category) {
+        this.category = category;
     }
+
+    public void setCost(float cost) {
+        this.cost = cost;
+    }
+
+    public Media(String title, String category, float cost){
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+    }
+
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
 
-        Track track = (Track) obj;
-        return Objects.equals(title, track.title) && length == track.length;
+        Media media = (Media) obj;
+        return Objects.equals(title, media.title);
     }
+    public boolean isMatch(String title){
+        if(title.equals(this.getTitle())) return true;
+        else {
+            return false;
+        }
+    }
+
+    public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
+    public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
 }
